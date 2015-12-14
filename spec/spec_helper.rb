@@ -20,6 +20,7 @@ require 'database_cleaner'
 require 'ffaker'
 require 'vcr'
 require 'webmock/rspec'
+require 'pry'
 
 EasyPost.api_key = 'CvzYtuda6KRI9JjG7SAHbA'
 
