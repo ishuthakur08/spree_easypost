@@ -5,7 +5,7 @@ http_interactions:
     uri: https://api.easypost.com/v2/addresses
     body:
       encoding: US-ASCII
-      string: address[street1]=200%2019th%20St&address[city]=Birmingham&address[zip]=35203&address[phone]=123456789&address[name]=Newt%20Scamander&address[state]=AL&address[country]=US
+      string: address[name]=Newt%20Scamander&address[company]=Spree%20Test%20Store%205&address[street1]=200%2019th%20St&address[city]=Birmingham&address[state]=AL&address[country]=US&address[zip]=35203&address[phone]=123456789
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -18,18 +18,12 @@ http_interactions:
       Content-Type:
       - application/x-www-form-urlencoded
       Content-Length:
-      - '170'
+      - '212'
   response:
     status:
       code: 201
       message: Created
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:18 GMT
-      Status:
-      - 201 Created
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -37,37 +31,41 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - "/api/v2/addresses/adr_544d603cba11461090b7a2bd116a8a30"
+      - "/api/v2/addresses/adr_a83ef03b62a34e4fa261c52c298fef08"
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"2c298b6757d734fcb8d04a99b503980b"
+      - W/"07388caccc3c145188d796835f4fe5a6"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - c26b5bed-2ad2-4ada-bb32-b29ff1c4491f
+      - 3a3f6e83-7ca8-47a4-9fea-b0f50a193049
       X-Runtime:
-      - '0.079376'
+      - '0.040097'
       X-Node:
-      - web14sj, 6427aa0e60
+      - 317b571a6b
+      - easypost
+      - web4sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 6568750064
+      - lb4sj, 0ccc190e51
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
+      Connection:
+      - close
     body:
       encoding: UTF-8
-      string: '{"id":"adr_544d603cba11461090b7a2bd116a8a30","object":"Address","created_at":"2015-12-02T21:34:18Z","updated_at":"2015-12-02T21:34:18Z","name":"Newt
-        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null}'
+      string: '{"id":"adr_a83ef03b62a34e4fa261c52c298fef08","object":"Address","created_at":"2015-12-15T22:59:52Z","updated_at":"2015-12-15T22:59:52Z","name":"Newt
+        Scamander","company":"Spree Test Store 5","street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:20 GMT
+  recorded_at: Tue, 15 Dec 2015 22:59:52 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/addresses
     body:
       encoding: US-ASCII
-      string: address[street1]=2630%20Cahaba%20Rd&address[city]=Birmingham&address[zip]=35223&address[phone]=(202)%20456-1111&address[company]=Spree%20Test%20Store%2021&address[state]=AL&address[country]=US
+      string: address[company]=Spree%20Test%20Store%205&address[street1]=2630%20Cahaba%20Rd&address[city]=Birmingham&address[state]=AL&address[country]=US&address[zip]=35223&address[phone]=(202)%20456-1111
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -80,18 +78,12 @@ http_interactions:
       Content-Type:
       - application/x-www-form-urlencoded
       Content-Length:
-      - '192'
+      - '191'
   response:
     status:
       code: 201
       message: Created
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:19 GMT
-      Status:
-      - 201 Created
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -99,31 +91,35 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - "/api/v2/addresses/adr_7f2b0a54c4664c8a985930f87e87e203"
+      - "/api/v2/addresses/adr_69513af745b74899804675de73c52f95"
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"c4670f7eb13ffbca9806fb3ce35b681a"
+      - W/"e889512496c860cf367e8d6baf279a42"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 20cc7015-fb27-4f7e-9d97-569ec2281b90
+      - 4471546a-facf-46b7-a2b6-d059e9e76ea0
       X-Runtime:
-      - '0.036455'
+      - '0.040044'
       X-Node:
-      - web3sj, e2304ceaff
+      - 317b571a6b
+      - easypost
+      - web6sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 6568750064
+      - lb5sj, 0ccc190e51
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
+      Connection:
+      - close
     body:
       encoding: UTF-8
-      string: '{"id":"adr_7f2b0a54c4664c8a985930f87e87e203","object":"Address","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","name":null,"company":"Spree
-        Test Store 21","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null}'
+      string: '{"id":"adr_69513af745b74899804675de73c52f95","object":"Address","created_at":"2015-12-15T22:59:53Z","updated_at":"2015-12-15T22:59:53Z","name":null,"company":"Spree
+        Test Store 5","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:21 GMT
+  recorded_at: Tue, 15 Dec 2015 22:59:53 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/parcels
@@ -148,12 +144,6 @@ http_interactions:
       code: 201
       message: Created
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:19 GMT
-      Status:
-      - 201 Created
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -161,36 +151,40 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - "/api/v2/parcels/prcl_6c662e0c441a4fd692f71b0723a5de43"
+      - "/api/v2/parcels/prcl_d09dee8a7b644c8884de3232e103de1d"
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"fbc515d5b70d6fb472b65bcef3047354"
+      - W/"c1545fdcce936bc1e2dc2133ef48c70e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 86f6a062-89dc-4676-b165-6cb169824536
+      - d770103a-ca45-4b2b-b4ec-3187f47770a2
       X-Runtime:
-      - '0.018308'
+      - '0.031283'
       X-Node:
-      - web10sj, c3ab94a7a6
+      - 317b571a6b
+      - easypost
+      - web15sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 6568750064
+      - lb4sj, 0ccc190e51
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
+      Connection:
+      - close
     body:
       encoding: UTF-8
-      string: '{"id":"prcl_6c662e0c441a4fd692f71b0723a5de43","object":"Parcel","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":20.0,"mode":"test"}'
+      string: '{"id":"prcl_d09dee8a7b644c8884de3232e103de1d","object":"Parcel","created_at":"2015-12-15T22:59:54Z","updated_at":"2015-12-15T22:59:54Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":20.0,"mode":"test"}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:21 GMT
+  recorded_at: Tue, 15 Dec 2015 22:59:54 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/shipments
     body:
       encoding: US-ASCII
-      string: shipment[to_address][id]=adr_544d603cba11461090b7a2bd116a8a30&shipment[from_address][id]=adr_7f2b0a54c4664c8a985930f87e87e203&shipment[parcel][id]=prcl_6c662e0c441a4fd692f71b0723a5de43
+      string: shipment[to_address][id]=adr_a83ef03b62a34e4fa261c52c298fef08&shipment[from_address][id]=adr_69513af745b74899804675de73c52f95&shipment[parcel][id]=prcl_d09dee8a7b644c8884de3232e103de1d
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -209,12 +203,6 @@ http_interactions:
       code: 201
       message: Created
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:20 GMT
-      Status:
-      - 201 Created
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -222,37 +210,41 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - "/account/shipments/shp_51d5cc7295884ab88063663dbfffe1f8"
+      - "/account/shipments/shp_5c61221da2e64207879421c24446cbba"
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"a232bfe8b9d91cb433a392cde69a004d"
+      - W/"3435b68418aea6ef0d8bbd73b181e1ce"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9c718e00-ef89-4663-9126-34f8791ef29e
+      - d5e82df4-db2e-44d0-b14f-fb8a758f95d6
       X-Runtime:
-      - '0.774200'
+      - '0.775903'
       X-Node:
-      - web3sj, e2304ceaff
+      - 317b571a6b
+      - easypost
+      - web5sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 6568750064
+      - lb5sj, 0ccc190e51
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
+      Connection:
+      - close
     body:
       encoding: UTF-8
-      string: '{"created_at":"2015-12-02T21:34:19Z","is_return":false,"messages":[],"mode":"test","options":{"currency":"USD","label_date":null},"reference":null,"status":"unknown","tracking_code":null,"updated_at":"2015-12-02T21:34:19Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_7f2b0a54c4664c8a985930f87e87e203","object":"Address","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","name":null,"company":"Spree
-        Test Store 21","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"insurance":null,"parcel":{"id":"prcl_6c662e0c441a4fd692f71b0723a5de43","object":"Parcel","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":20.0,"mode":"test"},"postage_label":null,"rates":[{"id":"rate_2e6265294e734da991ffbb492cc512ad","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"5.90","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.90","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_07617a03a69d48a792e05ea64c41919c","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"Priority","carrier":"USPS","rate":"5.32","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.32","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_a3254bc599bd4a909e8602db0abeacf1","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"Express","carrier":"USPS","rate":"15.58","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"15.58","list_currency":"USD","delivery_days":1,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":1,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":null,"tracker":null,"to_address":{"id":"adr_544d603cba11461090b7a2bd116a8a30","object":"Address","created_at":"2015-12-02T21:34:18Z","updated_at":"2015-12-02T21:34:18Z","name":"Newt
-        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"usps_zone":1,"return_address":{"id":"adr_7f2b0a54c4664c8a985930f87e87e203","object":"Address","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","name":null,"company":"Spree
-        Test Store 21","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"buyer_address":{"id":"adr_544d603cba11461090b7a2bd116a8a30","object":"Address","created_at":"2015-12-02T21:34:18Z","updated_at":"2015-12-02T21:34:18Z","name":"Newt
-        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"forms":[],"fees":[],"id":"shp_51d5cc7295884ab88063663dbfffe1f8","object":"Shipment"}'
+      string: '{"created_at":"2015-12-15T22:59:55Z","is_return":false,"messages":[],"mode":"test","options":{"currency":"USD","label_date":null},"reference":null,"status":"unknown","tracking_code":null,"updated_at":"2015-12-15T22:59:55Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_69513af745b74899804675de73c52f95","object":"Address","created_at":"2015-12-15T22:59:53Z","updated_at":"2015-12-15T22:59:53Z","name":null,"company":"Spree
+        Test Store 5","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"insurance":null,"parcel":{"id":"prcl_d09dee8a7b644c8884de3232e103de1d","object":"Parcel","created_at":"2015-12-15T22:59:54Z","updated_at":"2015-12-15T22:59:54Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":20.0,"mode":"test"},"postage_label":null,"rates":[{"id":"rate_60f0aa8870234b4eb9818a15e286a8c3","object":"Rate","created_at":"2015-12-15T22:59:56Z","updated_at":"2015-12-15T22:59:56Z","mode":"test","service":"Priority","carrier":"USPS","rate":"5.32","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.32","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_5c61221da2e64207879421c24446cbba","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_b0f636104c53487ca824f828312d8d7d","object":"Rate","created_at":"2015-12-15T22:59:56Z","updated_at":"2015-12-15T22:59:56Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"5.90","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.90","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_5c61221da2e64207879421c24446cbba","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_74bd7fe63b534b7f9c09da432c391efc","object":"Rate","created_at":"2015-12-15T22:59:56Z","updated_at":"2015-12-15T22:59:56Z","mode":"test","service":"Express","carrier":"USPS","rate":"15.58","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"15.58","list_currency":"USD","delivery_days":1,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":1,"shipment_id":"shp_5c61221da2e64207879421c24446cbba","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":null,"tracker":null,"to_address":{"id":"adr_a83ef03b62a34e4fa261c52c298fef08","object":"Address","created_at":"2015-12-15T22:59:52Z","updated_at":"2015-12-15T22:59:52Z","name":"Newt
+        Scamander","company":"Spree Test Store 5","street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"usps_zone":1,"return_address":{"id":"adr_69513af745b74899804675de73c52f95","object":"Address","created_at":"2015-12-15T22:59:53Z","updated_at":"2015-12-15T22:59:53Z","name":null,"company":"Spree
+        Test Store 5","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"buyer_address":{"id":"adr_a83ef03b62a34e4fa261c52c298fef08","object":"Address","created_at":"2015-12-15T22:59:52Z","updated_at":"2015-12-15T22:59:52Z","name":"Newt
+        Scamander","company":"Spree Test Store 5","street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"forms":[],"fees":[],"id":"shp_5c61221da2e64207879421c24446cbba","object":"Shipment"}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:22 GMT
+  recorded_at: Tue, 15 Dec 2015 22:59:56 GMT
 - request:
     method: get
-    uri: https://api.easypost.com/v2/shipments/shp_51d5cc7295884ab88063663dbfffe1f8
+    uri: https://api.easypost.com/v2/shipments/shp_5c61221da2e64207879421c24446cbba
     body:
       encoding: US-ASCII
       string: ''
@@ -272,12 +264,6 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:20 GMT
-      Status:
-      - 200 OK
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -287,36 +273,40 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"a232bfe8b9d91cb433a392cde69a004d"
+      - W/"3435b68418aea6ef0d8bbd73b181e1ce"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 29fa7536-4026-4c51-bf0c-33ef496047be
+      - cb059b94-4476-4e82-bcbc-eae55b383970
       X-Runtime:
-      - '0.071603'
+      - '0.068144'
       X-Node:
-      - web6sj, e2304ceaff
+      - 317b571a6b
+      - easypost
+      - web15sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 6568750064
+      - lb4sj, 0ccc190e51
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
+      Connection:
+      - close
     body:
       encoding: UTF-8
-      string: '{"created_at":"2015-12-02T21:34:19Z","is_return":false,"messages":[],"mode":"test","options":{"currency":"USD","label_date":null},"reference":null,"status":"unknown","tracking_code":null,"updated_at":"2015-12-02T21:34:19Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_7f2b0a54c4664c8a985930f87e87e203","object":"Address","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","name":null,"company":"Spree
-        Test Store 21","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"insurance":null,"parcel":{"id":"prcl_6c662e0c441a4fd692f71b0723a5de43","object":"Parcel","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":20.0,"mode":"test"},"postage_label":null,"rates":[{"id":"rate_2e6265294e734da991ffbb492cc512ad","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"5.90","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.90","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_07617a03a69d48a792e05ea64c41919c","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"Priority","carrier":"USPS","rate":"5.32","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.32","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_a3254bc599bd4a909e8602db0abeacf1","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"Express","carrier":"USPS","rate":"15.58","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"15.58","list_currency":"USD","delivery_days":1,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":1,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":null,"tracker":null,"to_address":{"id":"adr_544d603cba11461090b7a2bd116a8a30","object":"Address","created_at":"2015-12-02T21:34:18Z","updated_at":"2015-12-02T21:34:18Z","name":"Newt
-        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"usps_zone":1,"return_address":{"id":"adr_7f2b0a54c4664c8a985930f87e87e203","object":"Address","created_at":"2015-12-02T21:34:19Z","updated_at":"2015-12-02T21:34:19Z","name":null,"company":"Spree
-        Test Store 21","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"buyer_address":{"id":"adr_544d603cba11461090b7a2bd116a8a30","object":"Address","created_at":"2015-12-02T21:34:18Z","updated_at":"2015-12-02T21:34:18Z","name":"Newt
-        Scamander","company":null,"street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":false,"federal_tax_id":null},"forms":[],"fees":[],"id":"shp_51d5cc7295884ab88063663dbfffe1f8","object":"Shipment"}'
+      string: '{"created_at":"2015-12-15T22:59:55Z","is_return":false,"messages":[],"mode":"test","options":{"currency":"USD","label_date":null},"reference":null,"status":"unknown","tracking_code":null,"updated_at":"2015-12-15T22:59:55Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_69513af745b74899804675de73c52f95","object":"Address","created_at":"2015-12-15T22:59:53Z","updated_at":"2015-12-15T22:59:53Z","name":null,"company":"Spree
+        Test Store 5","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"insurance":null,"parcel":{"id":"prcl_d09dee8a7b644c8884de3232e103de1d","object":"Parcel","created_at":"2015-12-15T22:59:54Z","updated_at":"2015-12-15T22:59:54Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":20.0,"mode":"test"},"postage_label":null,"rates":[{"id":"rate_60f0aa8870234b4eb9818a15e286a8c3","object":"Rate","created_at":"2015-12-15T22:59:56Z","updated_at":"2015-12-15T22:59:56Z","mode":"test","service":"Priority","carrier":"USPS","rate":"5.32","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.32","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_5c61221da2e64207879421c24446cbba","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_b0f636104c53487ca824f828312d8d7d","object":"Rate","created_at":"2015-12-15T22:59:56Z","updated_at":"2015-12-15T22:59:56Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"5.90","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.90","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_5c61221da2e64207879421c24446cbba","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_74bd7fe63b534b7f9c09da432c391efc","object":"Rate","created_at":"2015-12-15T22:59:56Z","updated_at":"2015-12-15T22:59:56Z","mode":"test","service":"Express","carrier":"USPS","rate":"15.58","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"15.58","list_currency":"USD","delivery_days":1,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":1,"shipment_id":"shp_5c61221da2e64207879421c24446cbba","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":null,"tracker":null,"to_address":{"id":"adr_a83ef03b62a34e4fa261c52c298fef08","object":"Address","created_at":"2015-12-15T22:59:52Z","updated_at":"2015-12-15T22:59:52Z","name":"Newt
+        Scamander","company":"Spree Test Store 5","street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"usps_zone":1,"return_address":{"id":"adr_69513af745b74899804675de73c52f95","object":"Address","created_at":"2015-12-15T22:59:53Z","updated_at":"2015-12-15T22:59:53Z","name":null,"company":"Spree
+        Test Store 5","street1":"2630 Cahaba Rd","street2":null,"city":"Birmingham","state":"AL","zip":"35223","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"buyer_address":{"id":"adr_a83ef03b62a34e4fa261c52c298fef08","object":"Address","created_at":"2015-12-15T22:59:52Z","updated_at":"2015-12-15T22:59:52Z","name":"Newt
+        Scamander","company":"Spree Test Store 5","street1":"200 19th St","street2":null,"city":"Birmingham","state":"AL","zip":"35203","country":"US","phone":"123456789","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"forms":[],"fees":[],"id":"shp_5c61221da2e64207879421c24446cbba","object":"Shipment"}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:22 GMT
+  recorded_at: Tue, 15 Dec 2015 22:59:57 GMT
 - request:
     method: post
-    uri: https://api.easypost.com/v2/shipments/shp_51d5cc7295884ab88063663dbfffe1f8/buy
+    uri: https://api.easypost.com/v2/shipments/shp_5c61221da2e64207879421c24446cbba/buy
     body:
       encoding: US-ASCII
-      string: rate[id]=rate_07617a03a69d48a792e05ea64c41919c
+      string: rate[id]=rate_60f0aa8870234b4eb9818a15e286a8c3
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -335,12 +325,6 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Date:
-      - Wed, 02 Dec 2015 21:34:22 GMT
-      Status:
-      - 200 OK
-      Connection:
-      - close
       X-Frame-Options:
       - SAMEORIGIN
       X-Xss-Protection:
@@ -350,24 +334,28 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"ded3ce0f0935aabac1c4c6688d54848d"
+      - W/"c4afb4db2aadb8cf8a044ae8e8a01e0d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1710bffe-e302-4405-8cfa-e30c7b5d20fe
+      - bee9c185-6ad7-4253-bd23-64b9762583ef
       X-Runtime:
-      - '1.356717'
+      - '1.426157'
       X-Node:
-      - web15sj, e2304ceaff
+      - 317b571a6b
+      - easypost
+      - web15sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 6568750064
+      - lb5sj, 0ccc190e51
       Strict-Transport-Security:
-      - max-age=86400
+      - max-age=15768000; includeSubDomains; preload
+      Connection:
+      - close
     body:
       encoding: UTF-8
-      string: '{"postage_label":{"id":"pl_d5b589dffcb44668ad55a8f709bc44d8","object":"PostageLabel","created_at":"2015-12-02T21:34:21Z","updated_at":"2015-12-02T21:34:21Z","date_advance":0,"integrated_form":"none","label_date":"2015-12-02T21:34:19Z","label_resolution":300,"label_size":"4x6","label_type":"default","label_url":"http://assets.geteasypost.com/postage_labels/labels/20151202/e8a4d25d908843a2a4bd3497b5bbb23d.png","label_file_type":"image/png","label_pdf_url":null,"label_epl2_url":null,"label_zpl_url":null},"tracking_code":"9499907123456123456781","tracker":{"id":"trk_bec01fba18684e09b05831e543f07e61","object":"Tracker","mode":"test","tracking_code":"9499907123456123456781","status":"unknown","created_at":"2015-12-02T21:34:22Z","updated_at":"2015-12-02T21:34:22Z","signed_by":null,"weight":null,"est_delivery_date":null,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier":"USPS","tracking_details":[],"fees":[],"carrier_detail":null},"insurance":null,"selected_rate":{"id":"rate_07617a03a69d48a792e05ea64c41919c","object":"Rate","created_at":"2015-12-02T21:34:20Z","updated_at":"2015-12-02T21:34:20Z","mode":"test","service":"Priority","carrier":"USPS","rate":"5.32","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.32","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_51d5cc7295884ab88063663dbfffe1f8","carrier_account_id":"ca_mtb51Ve0"},"forms":[],"messages":[],"fees":[{"object":"Fee","type":"LabelFee","amount":"0.05000","charged":false,"refunded":false},{"object":"Fee","type":"PostageFee","amount":"5.32000","charged":false,"refunded":false}]}'
+      string: '{"postage_label":{"id":"pl_dcd0e9296fea470091cd1f8b929d7b5a","object":"PostageLabel","created_at":"2015-12-15T22:59:58Z","updated_at":"2015-12-15T22:59:58Z","date_advance":0,"integrated_form":"none","label_date":"2015-12-15T22:59:55Z","label_resolution":300,"label_size":"4x6","label_type":"default","label_url":"http://assets.geteasypost.com/postage_labels/labels/20151215/20057114776d4181891681d57eaf0f5b.png","label_file_type":"image/png","label_pdf_url":null,"label_epl2_url":null,"label_zpl_url":null},"tracking_code":"9499907123456123456781","tracker":{"id":"trk_169c2d1e6ac44cf9b3f7c7a02be23c6d","object":"Tracker","mode":"test","tracking_code":"9499907123456123456781","status":"unknown","created_at":"2015-12-15T22:59:59Z","updated_at":"2015-12-15T22:59:59Z","signed_by":null,"weight":null,"est_delivery_date":null,"shipment_id":"shp_5c61221da2e64207879421c24446cbba","carrier":"USPS","tracking_details":[],"fees":[],"carrier_detail":null},"insurance":null,"selected_rate":{"id":"rate_60f0aa8870234b4eb9818a15e286a8c3","object":"Rate","created_at":"2015-12-15T22:59:56Z","updated_at":"2015-12-15T22:59:56Z","mode":"test","service":"Priority","carrier":"USPS","rate":"5.32","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.32","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_5c61221da2e64207879421c24446cbba","carrier_account_id":"ca_mtb51Ve0"},"forms":[],"messages":[],"fees":[{"object":"Fee","type":"LabelFee","amount":"0.05000","charged":false,"refunded":false},{"object":"Fee","type":"PostageFee","amount":"5.32000","charged":false,"refunded":false}]}'
     http_version: 
-  recorded_at: Wed, 02 Dec 2015 21:34:24 GMT
+  recorded_at: Tue, 15 Dec 2015 22:59:59 GMT
 recorded_with: VCR 3.0.0
