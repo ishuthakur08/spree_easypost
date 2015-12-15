@@ -15,8 +15,8 @@ module Spree
 
       def easypost_shipment
         @ep_shipment ||= ::EasyPost::Shipment.create(
-          from_address: stock_location.easypost_address,
-          to_address: order.ship_address.easypost_address,
+          from_address: Address.new(stock_location: stock_location).easypost_address,
+          to_address: Address.new(address: order.ship_address).easypost_address,
           parcel: build_parcel,
           is_return: true
         )

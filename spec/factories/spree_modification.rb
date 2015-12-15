@@ -17,4 +17,8 @@ FactoryGirl.modify do
     association(:state, name: 'New Jersey', abbr: 'NJ')
     zipcode '08835'
   end
+
+  factory :return_authorization do
+    order { FactoryGirl.create(:shipped_order, with_cartons: false) }
+  end
 end
