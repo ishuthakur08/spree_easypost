@@ -1,7 +1,7 @@
 require File.expand_path('../../../spree_easypost/estimator', __FILE__)
 module Spree
   module Stock
-    module CoordinatorDecorator
+    module CoordinatorDecorator # :nodoc:
       def self.prepended(mod)
         mod.cattr_accessor :estimator_class
         mod.estimator_class = Spree::EasyPost::Estimator

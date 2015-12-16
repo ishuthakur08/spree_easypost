@@ -1,7 +1,7 @@
 require File.expand_path('../../spree_easypost/estimator', __FILE__)
 
 module Spree
-  module ShipmentDecorator
+  module ShipmentDecorator # :nodoc:
     def self.prepended(mod)
       mod.state_machine.before_transition(
         to: :shipped,

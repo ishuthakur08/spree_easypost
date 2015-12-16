@@ -1,15 +1,15 @@
-# This class is a replacement for the +Spree::Stock::Estimator+.
-# It overrides the shipping_rates method to retrieve shipping rate from the
-# EasyPost Api.
-#
-# Shipping rates require Shipping methods so the estimator
-# will create a new shipping method for any rate if it cannot find one
-# with +the admin_name+ "<carrier> <service>". These newly created shipping
-# methods are visible on the backend only until they are otherwise updated.
-#
-# The cheapest shipping rate will be selected for the package by default
 module Spree
   module EasyPost
+    # This class is a replacement for the +Spree::Stock::Estimator+.
+    # It overrides the shipping_rates method to retrieve shipping rate from the
+    # EasyPost Api.
+    #
+    # Shipping rates require Shipping methods so the estimator
+    # will create a new shipping method for any rate if it cannot find one
+    # with the +admin_name+ "<carrier> <service>". These newly created shipping
+    # methods are visible on the backend only until they are otherwise updated.
+    #
+    # The cheapest shipping rate will be selected for the package by default.
     class Estimator < Stock::Estimator
 
       # Get available shipping rates from easy post for the package
@@ -17,11 +17,11 @@ module Spree
       # the rate carrier and service.
       # Select the cheapest shipping rate by default.
       #
-      # === Examples
-      # estimator = Spree::EasyPost::Estimator.new order
-      # rates = estimator.shipping_rates(package)
-      # # Returns the shipping rates which have been associated with
-      # # the package.
+      # ===== Examples
+      #   estimator = Spree::EasyPost::Estimator.new order
+      #   rates = estimator.shipping_rates(package)
+      #   # Returns the shipping rates which have been associated with
+      #   # the package.
       def shipping_rates(package)
         shipment = Package.new(package).easypost_shipment
         rates = shipment.rates.sort_by { |r| r.rate.to_i }

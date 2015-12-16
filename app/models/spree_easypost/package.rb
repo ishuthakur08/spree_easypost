@@ -1,46 +1,46 @@
 require 'forwardable'
 
-# A wrapper class for +Spree::Package+ to encapsulate the API calls
-# to Easypost to retrieve +EasyPost::Parcel+ and +EasyPost::Shipment+
 module Spree
   module EasyPost
+    # A wrapper class for +Spree::Package+ to encapsulate the API calls
+    # to Easypost to retrieve +EasyPost::Parcel+ and +EasyPost::Shipment+.
     class Package
       extend Forwardable
 
-      # Retrieve the +Spree::Package+
+      # Retrieve the +Spree::Package+.
       attr_reader :package
 
       def_delegators :@package, :order, :stock_location
 
-      # Initialize a new instance of a +Spree::EasyPost::Package
+      # Initialize a new instance of a +Spree::EasyPost::Package.
       #
       # === Attributes
-      # [+package+]:: A +Spree::Package+ the weight of the package must
-      #               not be 0 or EasyPost will raise an error.
+      # [+package+] A +Spree::Package+ the weight of the package must
+      #             not be 0 or EasyPost will raise an error.
       #
-      # === Examples
-      # Spree::EasyPost::Package.new package
-      # # Returns and instance of +Spree::EasyPost::Package+
+      # ===== Examples
+      #   Spree::EasyPost::Package.new package
+      #   # Returns and instance of <Spree::EasyPost::Package>
       def initialize(package)
         @package = package
       end
 
-      # Retrieve an +EasyPost::Parcel
+      # Retrieve an +EasyPost::Parcel.
       #
-      # === Examples
-      # package = Spree::EasyPost::Package.new package
-      # package.easypost_parcel
-      # # Returns and instance of an EasyPost::Parcel
+      # ====== Examples
+      #   package = Spree::EasyPost::Package.new package
+      #   package.easypost_parcel
+      #   # Returns and instance of an EasyPost::Parcel
       def easypost_parcel
         ::EasyPost::Parcel.create weight: total_weight
       end
 
-      # Retrieve an +EasyPost::Shipment
+      # Retrieve an +EasyPost::Shipment.
       #
-      # === Examples
-      # package = Spree::EasyPost::Package.new package
-      # package.easypost_shipment
-      # # Returns and instance of an EasyPost::Shipment
+      # ===== Examples
+      #   package = Spree::EasyPost::Package.new package
+      #   package.easypost_shipment
+      #   # Returns and instance of an EasyPost::Shipment
       def easypost_shipment
         ::EasyPost::Shipment.create shipment_params
       end
