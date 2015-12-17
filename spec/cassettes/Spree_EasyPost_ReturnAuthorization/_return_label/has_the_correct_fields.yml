@@ -31,41 +31,41 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - "/api/v2/addresses/adr_6ab3d35aedef48199407204960582a9d"
+      - "/api/v2/addresses/adr_17cf1f2bb5e64dea964356087e0c0be1"
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"306bf168fd9b52c37a07c009bff860e0"
+      - W/"c9c5f9bb946c097e313e7c0de6163c2e"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 82fb50fc-7367-4ba5-9ae0-e429f0c5791d
+      - ff326b6f-fe68-43d9-be3e-f0c6261b72ee
       X-Runtime:
-      - '0.032015'
+      - '0.028542'
       X-Node:
-      - 317b571a6b
+      - 80c1ed5cd5
       - easypost
-      - web11sj
+      - web4sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 0ccc190e51
+      - lb4sj, 0ccc190e51
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":"adr_6ab3d35aedef48199407204960582a9d","object":"Address","created_at":"2015-12-15T22:38:44Z","updated_at":"2015-12-15T22:38:44Z","name":"John
+      string: '{"id":"adr_17cf1f2bb5e64dea964356087e0c0be1","object":"Address","created_at":"2015-12-17T17:14:43Z","updated_at":"2015-12-17T17:14:43Z","name":"John
         Doe","company":"Company","street1":"215 N 7th Ave","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}}'
     http_version: 
-  recorded_at: Tue, 15 Dec 2015 22:38:44 GMT
+  recorded_at: Thu, 17 Dec 2015 17:14:43 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/addresses
     body:
       encoding: US-ASCII
-      string: address[company]=Spree%20Test%20Store%2035&address[street1]=131%20S%208th%20Ave&address[city]=Manville&address[state]=NJ&address[country]=US&address[zip]=08835&address[phone]=(202)%20456-1111
+      string: address[company]=Spree%20Test%20Store%2037&address[street1]=131%20S%208th%20Ave&address[city]=Manville&address[state]=NJ&address[country]=US&address[zip]=08835&address[phone]=(202)%20456-1111
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -91,35 +91,35 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - "/api/v2/addresses/adr_48a5d5169ebc4aa595f123d98ab1b439"
+      - "/api/v2/addresses/adr_646b048355c74704a054b16b857618f7"
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"b337a21ce51d660b85d75ff583ee036a"
+      - W/"fe7c5073dd1dd892ddc2e4f90e2ca3bd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 91cb6770-fd1d-410c-9d51-3b08783c1a14
+      - 9ea69fc3-1816-46c1-b4a8-a99ff5d80f83
       X-Runtime:
-      - '0.088134'
+      - '0.041252'
       X-Node:
-      - 317b571a6b
+      - 80c1ed5cd5
       - easypost
-      - web4sj
+      - web6sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb4sj, 0ccc190e51
+      - lb5sj, 0ccc190e51
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":"adr_48a5d5169ebc4aa595f123d98ab1b439","object":"Address","created_at":"2015-12-15T22:38:45Z","updated_at":"2015-12-15T22:38:45Z","name":null,"company":"Spree
-        Test Store 35","street1":"131 S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}}'
+      string: '{"id":"adr_646b048355c74704a054b16b857618f7","object":"Address","created_at":"2015-12-17T17:14:44Z","updated_at":"2015-12-17T17:14:44Z","name":null,"company":"Spree
+        Test Store 37","street1":"131 S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}}'
     http_version: 
-  recorded_at: Tue, 15 Dec 2015 22:38:46 GMT
+  recorded_at: Thu, 17 Dec 2015 17:14:44 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/parcels
@@ -151,40 +151,40 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - "/api/v2/parcels/prcl_040569e10f884f309fa2a440ea30efd0"
+      - "/api/v2/parcels/prcl_ccda496ef6f44fe2a97d0551256d7874"
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"63f2103148b526db3c7a0e399f382cfb"
+      - W/"a8b9f601ae853344b9538b0a211abb54"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f8f74c00-49de-4d0a-8654-e33fb9385b4d
+      - d58575f1-f0bf-4896-b138-608be126e7af
       X-Runtime:
-      - '0.036009'
+      - '0.030891'
       X-Node:
-      - 317b571a6b
+      - 80c1ed5cd5
       - easypost
-      - web15sj
+      - web14sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 0ccc190e51
+      - lb4sj, 0ccc190e51
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":"prcl_040569e10f884f309fa2a440ea30efd0","object":"Parcel","created_at":"2015-12-15T22:38:47Z","updated_at":"2015-12-15T22:38:47Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"}'
+      string: '{"id":"prcl_ccda496ef6f44fe2a97d0551256d7874","object":"Parcel","created_at":"2015-12-17T17:14:45Z","updated_at":"2015-12-17T17:14:45Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"}'
     http_version: 
-  recorded_at: Tue, 15 Dec 2015 22:38:47 GMT
+  recorded_at: Thu, 17 Dec 2015 17:14:45 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/shipments
     body:
       encoding: US-ASCII
-      string: shipment[to_address][id]=adr_6ab3d35aedef48199407204960582a9d&shipment[from_address][id]=adr_48a5d5169ebc4aa595f123d98ab1b439&shipment[parcel][id]=prcl_040569e10f884f309fa2a440ea30efd0
+      string: shipment[to_address][id]=adr_17cf1f2bb5e64dea964356087e0c0be1&shipment[from_address][id]=adr_646b048355c74704a054b16b857618f7&shipment[parcel][id]=prcl_ccda496ef6f44fe2a97d0551256d7874
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -210,44 +210,44 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - "/account/shipments/shp_169d38c649e44042b7d47a81e86beaef"
+      - "/account/shipments/shp_61811b81627d49dc87a8eaf1a5c419fe"
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"57dabafa12c0a940f0ef7a6030a0b232"
+      - W/"7cd4afe6bf9d418339964e8b6d83c04b"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a357d1e5-da14-4e2c-bd5c-3eb2f0ea9f24
+      - 74e3df71-f922-4fdd-a8db-cf752c96cd8e
       X-Runtime:
-      - '0.769376'
+      - '0.836788'
       X-Node:
-      - 317b571a6b
+      - 80c1ed5cd5
       - easypost
       - web14sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb4sj, 0ccc190e51
+      - lb5sj, 0ccc190e51
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"created_at":"2015-12-15T22:38:48Z","is_return":false,"messages":[],"mode":"test","options":{"currency":"USD","label_date":null},"reference":null,"status":"unknown","tracking_code":null,"updated_at":"2015-12-15T22:38:48Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_48a5d5169ebc4aa595f123d98ab1b439","object":"Address","created_at":"2015-12-15T22:38:45Z","updated_at":"2015-12-15T22:38:45Z","name":null,"company":"Spree
-        Test Store 35","street1":"131 S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"insurance":null,"parcel":{"id":"prcl_040569e10f884f309fa2a440ea30efd0","object":"Parcel","created_at":"2015-12-15T22:38:47Z","updated_at":"2015-12-15T22:38:47Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"},"postage_label":null,"rates":[{"id":"rate_0ae3531071f04d90b228a818cf0d7437","object":"Rate","created_at":"2015-12-15T22:38:49Z","updated_at":"2015-12-15T22:38:49Z","mode":"test","service":"Priority","carrier":"USPS","rate":"5.05","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.05","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_169d38c649e44042b7d47a81e86beaef","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_e8a459fa4ef14764976d025d659237aa","object":"Rate","created_at":"2015-12-15T22:38:49Z","updated_at":"2015-12-15T22:38:49Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"5.70","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.70","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_169d38c649e44042b7d47a81e86beaef","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_057042d0dd014eedac1c77e13d32c49e","object":"Rate","created_at":"2015-12-15T22:38:49Z","updated_at":"2015-12-15T22:38:49Z","mode":"test","service":"First","carrier":"USPS","rate":"3.07","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"3.07","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_169d38c649e44042b7d47a81e86beaef","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_158f249d12a841b8b82dcae31ec96738","object":"Rate","created_at":"2015-12-15T22:38:49Z","updated_at":"2015-12-15T22:38:49Z","mode":"test","service":"Express","carrier":"USPS","rate":"15.13","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"15.13","list_currency":"USD","delivery_days":0,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":0,"shipment_id":"shp_169d38c649e44042b7d47a81e86beaef","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":null,"tracker":null,"to_address":{"id":"adr_6ab3d35aedef48199407204960582a9d","object":"Address","created_at":"2015-12-15T22:38:44Z","updated_at":"2015-12-15T22:38:44Z","name":"John
-        Doe","company":"Company","street1":"215 N 7th Ave","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"usps_zone":1,"return_address":{"id":"adr_48a5d5169ebc4aa595f123d98ab1b439","object":"Address","created_at":"2015-12-15T22:38:45Z","updated_at":"2015-12-15T22:38:45Z","name":null,"company":"Spree
-        Test Store 35","street1":"131 S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"buyer_address":{"id":"adr_6ab3d35aedef48199407204960582a9d","object":"Address","created_at":"2015-12-15T22:38:44Z","updated_at":"2015-12-15T22:38:44Z","name":"John
-        Doe","company":"Company","street1":"215 N 7th Ave","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"forms":[],"fees":[],"id":"shp_169d38c649e44042b7d47a81e86beaef","object":"Shipment"}'
+      string: '{"created_at":"2015-12-17T17:14:48Z","is_return":false,"messages":[],"mode":"test","options":{"currency":"USD","label_date":null},"reference":null,"status":"unknown","tracking_code":null,"updated_at":"2015-12-17T17:14:48Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_646b048355c74704a054b16b857618f7","object":"Address","created_at":"2015-12-17T17:14:44Z","updated_at":"2015-12-17T17:14:44Z","name":null,"company":"Spree
+        Test Store 37","street1":"131 S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"insurance":null,"parcel":{"id":"prcl_ccda496ef6f44fe2a97d0551256d7874","object":"Parcel","created_at":"2015-12-17T17:14:45Z","updated_at":"2015-12-17T17:14:45Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"},"postage_label":null,"rates":[{"id":"rate_14d71ec4fefa4af5907d619806b08bb6","object":"Rate","created_at":"2015-12-17T17:14:49Z","updated_at":"2015-12-17T17:14:49Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"5.70","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.70","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_61811b81627d49dc87a8eaf1a5c419fe","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_275f612528fd411baef877d41793f7b1","object":"Rate","created_at":"2015-12-17T17:14:49Z","updated_at":"2015-12-17T17:14:49Z","mode":"test","service":"Priority","carrier":"USPS","rate":"5.05","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.05","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_61811b81627d49dc87a8eaf1a5c419fe","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_abcc0dbea0fb4c79b58f8249c02e7e44","object":"Rate","created_at":"2015-12-17T17:14:49Z","updated_at":"2015-12-17T17:14:49Z","mode":"test","service":"First","carrier":"USPS","rate":"3.07","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"3.07","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_61811b81627d49dc87a8eaf1a5c419fe","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_4e4f53f04f6f4951827f1f5d6ba302b3","object":"Rate","created_at":"2015-12-17T17:14:49Z","updated_at":"2015-12-17T17:14:49Z","mode":"test","service":"Express","carrier":"USPS","rate":"15.13","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"15.13","list_currency":"USD","delivery_days":1,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":1,"shipment_id":"shp_61811b81627d49dc87a8eaf1a5c419fe","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":null,"tracker":null,"to_address":{"id":"adr_17cf1f2bb5e64dea964356087e0c0be1","object":"Address","created_at":"2015-12-17T17:14:43Z","updated_at":"2015-12-17T17:14:43Z","name":"John
+        Doe","company":"Company","street1":"215 N 7th Ave","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"usps_zone":1,"return_address":{"id":"adr_646b048355c74704a054b16b857618f7","object":"Address","created_at":"2015-12-17T17:14:44Z","updated_at":"2015-12-17T17:14:44Z","name":null,"company":"Spree
+        Test Store 37","street1":"131 S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"buyer_address":{"id":"adr_17cf1f2bb5e64dea964356087e0c0be1","object":"Address","created_at":"2015-12-17T17:14:43Z","updated_at":"2015-12-17T17:14:43Z","name":"John
+        Doe","company":"Company","street1":"215 N 7th Ave","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"forms":[],"fees":[],"id":"shp_61811b81627d49dc87a8eaf1a5c419fe","object":"Shipment"}'
     http_version: 
-  recorded_at: Tue, 15 Dec 2015 22:38:49 GMT
+  recorded_at: Thu, 17 Dec 2015 17:14:49 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/addresses
     body:
       encoding: US-ASCII
-      string: address[company]=Spree%20Test%20Store%2035&address[street1]=131%20S%208th%20Ave&address[city]=Manville&address[state]=NJ&address[country]=US&address[zip]=08835&address[phone]=(202)%20456-1111
+      string: address[company]=Spree%20Test%20Store%2037&address[street1]=131%20S%208th%20Ave&address[city]=Manville&address[state]=NJ&address[country]=US&address[zip]=08835&address[phone]=(202)%20456-1111
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -273,35 +273,35 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - "/api/v2/addresses/adr_5ed3e7b6b19240d58566077f4f9227d2"
+      - "/api/v2/addresses/adr_2a0f3df69e484f838bfbc13109c7b62e"
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"f12ab001c5a299a3763a307409e0e150"
+      - W/"82b9b93fa2e6cb9d2daba5f03daaa612"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6f222750-8374-4062-9802-29294e1d7ea6
+      - 426cdf42-0edc-4ec7-992c-b3f09f2b115f
       X-Runtime:
-      - '0.027834'
+      - '0.098557'
       X-Node:
-      - 317b571a6b
+      - 80c1ed5cd5
       - easypost
-      - web11sj
+      - web5sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 0ccc190e51
+      - lb4sj, 0ccc190e51
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":"adr_5ed3e7b6b19240d58566077f4f9227d2","object":"Address","created_at":"2015-12-15T22:38:53Z","updated_at":"2015-12-15T22:38:53Z","name":null,"company":"Spree
-        Test Store 35","street1":"131 S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}}'
+      string: '{"id":"adr_2a0f3df69e484f838bfbc13109c7b62e","object":"Address","created_at":"2015-12-17T17:14:50Z","updated_at":"2015-12-17T17:14:50Z","name":null,"company":"Spree
+        Test Store 37","street1":"131 S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}}'
     http_version: 
-  recorded_at: Tue, 15 Dec 2015 22:38:53 GMT
+  recorded_at: Thu, 17 Dec 2015 17:14:50 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/addresses
@@ -333,35 +333,35 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - "/api/v2/addresses/adr_94a3effc4d314811a5bc2b487063da9c"
+      - "/api/v2/addresses/adr_243a0b9bbd35400b8543ba2d3d0da0c9"
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"3c9d66ac90b8703b9b646037ab3cd5a6"
+      - W/"aff0c8166e0a747d7ae504026157c215"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 15f505b9-910c-410c-a7c9-628dd9a35cb3
+      - 8993f307-6f2a-423d-afd5-30b28b902cef
       X-Runtime:
-      - '0.041217'
+      - '0.042998'
       X-Node:
-      - 317b571a6b
+      - 80c1ed5cd5
       - easypost
-      - web11sj
+      - web5sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb4sj, 0ccc190e51
+      - lb5sj, 0ccc190e51
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":"adr_94a3effc4d314811a5bc2b487063da9c","object":"Address","created_at":"2015-12-15T22:38:54Z","updated_at":"2015-12-15T22:38:54Z","name":"John
+      string: '{"id":"adr_243a0b9bbd35400b8543ba2d3d0da0c9","object":"Address","created_at":"2015-12-17T17:14:51Z","updated_at":"2015-12-17T17:14:51Z","name":"John
         Doe","company":"Company","street1":"215 N 7th Ave","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}}'
     http_version: 
-  recorded_at: Tue, 15 Dec 2015 22:38:54 GMT
+  recorded_at: Thu, 17 Dec 2015 17:14:51 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/parcels
@@ -393,40 +393,40 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - "/api/v2/parcels/prcl_b0d321c8142f482890781d791de5d259"
+      - "/api/v2/parcels/prcl_51f1e4c5868f4b3997a26fc645b15476"
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"2df91c6f50ac419a75fbe0dd9552c190"
+      - W/"a8ed313d69aa987952ba536d20c846d0"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - aae5ac7d-9b3b-47e9-8e58-dc3ec34ba116
+      - 4c716566-d1b9-475d-bf0b-35940cad9cd4
       X-Runtime:
-      - '0.031734'
+      - '0.030123'
       X-Node:
-      - 317b571a6b
+      - 80c1ed5cd5
       - easypost
-      - web11sj
+      - web15sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 0ccc190e51
+      - lb4sj, 0ccc190e51
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"id":"prcl_b0d321c8142f482890781d791de5d259","object":"Parcel","created_at":"2015-12-15T22:38:55Z","updated_at":"2015-12-15T22:38:55Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"}'
+      string: '{"id":"prcl_51f1e4c5868f4b3997a26fc645b15476","object":"Parcel","created_at":"2015-12-17T17:14:51Z","updated_at":"2015-12-17T17:14:51Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"}'
     http_version: 
-  recorded_at: Tue, 15 Dec 2015 22:38:55 GMT
+  recorded_at: Thu, 17 Dec 2015 17:14:51 GMT
 - request:
     method: post
     uri: https://api.easypost.com/v2/shipments
     body:
       encoding: US-ASCII
-      string: shipment[from_address][id]=adr_5ed3e7b6b19240d58566077f4f9227d2&shipment[to_address][id]=adr_94a3effc4d314811a5bc2b487063da9c&shipment[parcel][id]=prcl_b0d321c8142f482890781d791de5d259&shipment[is_return]=true
+      string: shipment[from_address][id]=adr_2a0f3df69e484f838bfbc13109c7b62e&shipment[to_address][id]=adr_243a0b9bbd35400b8543ba2d3d0da0c9&shipment[parcel][id]=prcl_51f1e4c5868f4b3997a26fc645b15476&shipment[is_return]=true
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -452,44 +452,44 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Location:
-      - "/account/shipments/shp_9498ce012acf444283e2c5e3fe78103b"
+      - "/account/shipments/shp_92fd89025e634cd7a04fd2f1ce6118bd"
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"9fe86802bdf26993c5c8c930cc310bad"
+      - W/"9d7e9b0fa4d4b340e978644ccb90ff82"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8e7c5d7b-dce9-4552-9290-607860778f6b
+      - 68150e17-e97a-4f84-86ff-c004b88eddab
       X-Runtime:
-      - '0.778489'
+      - '0.782940'
       X-Node:
-      - 317b571a6b
+      - 80c1ed5cd5
       - easypost
-      - web3sj
+      - web15sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb4sj, 0ccc190e51
+      - lb5sj, 0ccc190e51
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"created_at":"2015-12-15T22:38:57Z","is_return":true,"messages":[],"mode":"test","options":{"currency":"USD","label_date":null},"reference":null,"status":"unknown","tracking_code":null,"updated_at":"2015-12-15T22:38:57Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_5ed3e7b6b19240d58566077f4f9227d2","object":"Address","created_at":"2015-12-15T22:38:53Z","updated_at":"2015-12-15T22:38:53Z","name":null,"company":"Spree
-        Test Store 35","street1":"131 S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"insurance":null,"parcel":{"id":"prcl_b0d321c8142f482890781d791de5d259","object":"Parcel","created_at":"2015-12-15T22:38:55Z","updated_at":"2015-12-15T22:38:55Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"},"postage_label":null,"rates":[{"id":"rate_2d5c355de66f48c3be516b3666741e8c","object":"Rate","created_at":"2015-12-15T22:38:57Z","updated_at":"2015-12-15T22:38:57Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"5.70","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.70","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_9498ce012acf444283e2c5e3fe78103b","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_9ee48df27b91430d8e7ada24a90f462c","object":"Rate","created_at":"2015-12-15T22:38:57Z","updated_at":"2015-12-15T22:38:57Z","mode":"test","service":"First","carrier":"USPS","rate":"3.07","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"3.07","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_9498ce012acf444283e2c5e3fe78103b","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_974045cb5b834aef83278ffd07f2bb55","object":"Rate","created_at":"2015-12-15T22:38:57Z","updated_at":"2015-12-15T22:38:57Z","mode":"test","service":"Priority","carrier":"USPS","rate":"5.05","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.05","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_9498ce012acf444283e2c5e3fe78103b","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_694dc56ef3104ba3820c1f3a1bd418b9","object":"Rate","created_at":"2015-12-15T22:38:57Z","updated_at":"2015-12-15T22:38:57Z","mode":"test","service":"Express","carrier":"USPS","rate":"15.13","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"15.13","list_currency":"USD","delivery_days":0,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":0,"shipment_id":"shp_9498ce012acf444283e2c5e3fe78103b","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":null,"tracker":null,"to_address":{"id":"adr_94a3effc4d314811a5bc2b487063da9c","object":"Address","created_at":"2015-12-15T22:38:54Z","updated_at":"2015-12-15T22:38:54Z","name":"John
-        Doe","company":"Company","street1":"215 N 7th Ave","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"usps_zone":1,"return_address":{"id":"adr_5ed3e7b6b19240d58566077f4f9227d2","object":"Address","created_at":"2015-12-15T22:38:53Z","updated_at":"2015-12-15T22:38:53Z","name":null,"company":"Spree
-        Test Store 35","street1":"131 S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"buyer_address":{"id":"adr_94a3effc4d314811a5bc2b487063da9c","object":"Address","created_at":"2015-12-15T22:38:54Z","updated_at":"2015-12-15T22:38:54Z","name":"John
-        Doe","company":"Company","street1":"215 N 7th Ave","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"forms":[],"fees":[],"id":"shp_9498ce012acf444283e2c5e3fe78103b","object":"Shipment"}'
+      string: '{"created_at":"2015-12-17T17:14:51Z","is_return":true,"messages":[],"mode":"test","options":{"currency":"USD","label_date":null},"reference":null,"status":"unknown","tracking_code":null,"updated_at":"2015-12-17T17:14:51Z","batch_id":null,"batch_status":null,"batch_message":null,"customs_info":null,"from_address":{"id":"adr_2a0f3df69e484f838bfbc13109c7b62e","object":"Address","created_at":"2015-12-17T17:14:50Z","updated_at":"2015-12-17T17:14:50Z","name":null,"company":"Spree
+        Test Store 37","street1":"131 S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"insurance":null,"parcel":{"id":"prcl_51f1e4c5868f4b3997a26fc645b15476","object":"Parcel","created_at":"2015-12-17T17:14:51Z","updated_at":"2015-12-17T17:14:51Z","length":null,"width":null,"height":null,"predefined_package":null,"weight":10.0,"mode":"test"},"postage_label":null,"rates":[{"id":"rate_f30360dd29544a5bbc367f8934228314","object":"Rate","created_at":"2015-12-17T17:14:52Z","updated_at":"2015-12-17T17:14:52Z","mode":"test","service":"First","carrier":"USPS","rate":"3.07","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"3.07","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_92fd89025e634cd7a04fd2f1ce6118bd","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_43f7953b8b8e40488c1a91612a4be89f","object":"Rate","created_at":"2015-12-17T17:14:52Z","updated_at":"2015-12-17T17:14:52Z","mode":"test","service":"Priority","carrier":"USPS","rate":"5.05","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.05","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_92fd89025e634cd7a04fd2f1ce6118bd","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_2783e38ae2574b69b42a575c3cc73cc1","object":"Rate","created_at":"2015-12-17T17:14:52Z","updated_at":"2015-12-17T17:14:52Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"5.70","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.70","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_92fd89025e634cd7a04fd2f1ce6118bd","carrier_account_id":"ca_mtb51Ve0"},{"id":"rate_567beed5c7c04ad9b8c63e146e4ef298","object":"Rate","created_at":"2015-12-17T17:14:52Z","updated_at":"2015-12-17T17:14:52Z","mode":"test","service":"Express","carrier":"USPS","rate":"15.13","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"15.13","list_currency":"USD","delivery_days":1,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":1,"shipment_id":"shp_92fd89025e634cd7a04fd2f1ce6118bd","carrier_account_id":"ca_mtb51Ve0"}],"refund_status":null,"scan_form":null,"selected_rate":null,"tracker":null,"to_address":{"id":"adr_243a0b9bbd35400b8543ba2d3d0da0c9","object":"Address","created_at":"2015-12-17T17:14:51Z","updated_at":"2015-12-17T17:14:51Z","name":"John
+        Doe","company":"Company","street1":"215 N 7th Ave","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"usps_zone":1,"return_address":{"id":"adr_2a0f3df69e484f838bfbc13109c7b62e","object":"Address","created_at":"2015-12-17T17:14:50Z","updated_at":"2015-12-17T17:14:50Z","name":null,"company":"Spree
+        Test Store 37","street1":"131 S 8th Ave","street2":null,"city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"2024561111","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"buyer_address":{"id":"adr_243a0b9bbd35400b8543ba2d3d0da0c9","object":"Address","created_at":"2015-12-17T17:14:51Z","updated_at":"2015-12-17T17:14:51Z","name":"John
+        Doe","company":"Company","street1":"215 N 7th Ave","street2":"Northwest","city":"Manville","state":"NJ","zip":"08835","country":"US","phone":"5555550199","email":null,"mode":"test","carrier_facility":null,"residential":null,"federal_tax_id":null,"verifications":{}},"forms":[],"fees":[],"id":"shp_92fd89025e634cd7a04fd2f1ce6118bd","object":"Shipment"}'
     http_version: 
-  recorded_at: Tue, 15 Dec 2015 22:38:57 GMT
+  recorded_at: Thu, 17 Dec 2015 17:14:52 GMT
 - request:
     method: post
-    uri: https://api.easypost.com/v2/shipments/shp_9498ce012acf444283e2c5e3fe78103b/buy
+    uri: https://api.easypost.com/v2/shipments/shp_92fd89025e634cd7a04fd2f1ce6118bd/buy
     body:
       encoding: US-ASCII
-      string: rate[id]=rate_2d5c355de66f48c3be516b3666741e8c
+      string: rate[id]=rate_f30360dd29544a5bbc367f8934228314
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -517,28 +517,28 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"cc56fb26d486a8336c08731a91b7beac"
+      - W/"6a3d65fb1addd09509e63ded283e1290"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 5db76b53-b004-4f27-a08c-79c3a36742a7
+      - db804011-0d0c-44bf-9d8d-4a2c154a3030
       X-Runtime:
-      - '1.476773'
+      - '1.058582'
       X-Node:
-      - 317b571a6b
+      - 80c1ed5cd5
       - easypost
-      - web6sj
+      - web14sj
       X-Backend:
       - easypost
       X-Proxied:
-      - lb5sj, 0ccc190e51
+      - lb4sj, 0ccc190e51
       Strict-Transport-Security:
       - max-age=15768000; includeSubDomains; preload
       Connection:
       - close
     body:
       encoding: UTF-8
-      string: '{"postage_label":{"id":"pl_c7c470a3da7049809910d1dbc321420d","object":"PostageLabel","created_at":"2015-12-15T22:39:00Z","updated_at":"2015-12-15T22:39:00Z","date_advance":0,"integrated_form":"none","label_date":"2015-12-15T22:38:57Z","label_resolution":300,"label_size":"4x6","label_type":"default","label_url":"http://assets.geteasypost.com/postage_labels/labels/20151215/83e003f3992f4cf6af019839fab6152a.png","label_file_type":"image/png","label_pdf_url":null,"label_epl2_url":null,"label_zpl_url":null},"tracking_code":"9499907123456123456781","tracker":{"id":"trk_4d2d1c9b5b2a4c00ad12c33186ee5c8b","object":"Tracker","mode":"test","tracking_code":"9499907123456123456781","status":"unknown","created_at":"2015-12-15T22:39:00Z","updated_at":"2015-12-15T22:39:00Z","signed_by":null,"weight":null,"est_delivery_date":null,"shipment_id":"shp_9498ce012acf444283e2c5e3fe78103b","carrier":"USPS","tracking_details":[],"fees":[],"carrier_detail":null},"insurance":null,"selected_rate":{"id":"rate_2d5c355de66f48c3be516b3666741e8c","object":"Rate","created_at":"2015-12-15T22:38:57Z","updated_at":"2015-12-15T22:38:57Z","mode":"test","service":"ParcelSelect","carrier":"USPS","rate":"5.70","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"5.70","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_9498ce012acf444283e2c5e3fe78103b","carrier_account_id":"ca_mtb51Ve0"},"forms":[],"messages":[],"fees":[{"object":"Fee","type":"LabelFee","amount":"0.05000","charged":false,"refunded":false},{"object":"Fee","type":"PostageFee","amount":"5.70000","charged":false,"refunded":false}]}'
+      string: '{"postage_label":{"id":"pl_f719fc45f5384871a9b7684066ae0f15","object":"PostageLabel","created_at":"2015-12-17T17:14:53Z","updated_at":"2015-12-17T17:14:53Z","date_advance":0,"integrated_form":"none","label_date":"2015-12-17T17:14:51Z","label_resolution":300,"label_size":"4x6","label_type":"default","label_url":"http://assets.geteasypost.com/postage_labels/labels/20151217/13fd83ef5cdb4a8f8e77e02bf086c8d5.png","label_file_type":"image/png","label_pdf_url":null,"label_epl2_url":null,"label_zpl_url":null},"tracking_code":"9499907123456123456781","tracker":{"id":"trk_827640783b7c4b2a8937baf97c5cb744","object":"Tracker","mode":"test","tracking_code":"9499907123456123456781","status":"unknown","created_at":"2015-12-17T17:14:54Z","updated_at":"2015-12-17T17:14:54Z","signed_by":null,"weight":null,"est_delivery_date":null,"shipment_id":"shp_92fd89025e634cd7a04fd2f1ce6118bd","carrier":"USPS","tracking_details":[],"fees":[],"carrier_detail":null},"insurance":null,"selected_rate":{"id":"rate_f30360dd29544a5bbc367f8934228314","object":"Rate","created_at":"2015-12-17T17:14:52Z","updated_at":"2015-12-17T17:14:52Z","mode":"test","service":"First","carrier":"USPS","rate":"3.07","currency":"USD","retail_rate":null,"retail_currency":null,"list_rate":"3.07","list_currency":"USD","delivery_days":null,"delivery_date":null,"delivery_date_guaranteed":null,"est_delivery_days":null,"shipment_id":"shp_92fd89025e634cd7a04fd2f1ce6118bd","carrier_account_id":"ca_mtb51Ve0"},"forms":[],"messages":[],"fees":[{"object":"Fee","type":"LabelFee","amount":"0.05000","charged":false,"refunded":false},{"object":"Fee","type":"PostageFee","amount":"3.07000","charged":false,"refunded":false}]}'
     http_version: 
-  recorded_at: Tue, 15 Dec 2015 22:39:00 GMT
+  recorded_at: Thu, 17 Dec 2015 17:14:54 GMT
 recorded_with: VCR 3.0.0

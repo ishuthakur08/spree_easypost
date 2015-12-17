@@ -2,6 +2,7 @@ module Spree
   module EasyPost
     class Engine < Rails::Engine
       require 'spree/core'
+
       isolate_namespace Spree
       engine_name 'spree_easypost'
 

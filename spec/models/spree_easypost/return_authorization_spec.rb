@@ -1,4 +1,3 @@
-require 'pry'
 require 'spec_helper'
 
 RSpec.describe Spree::EasyPost::ReturnAuthorization, :vcr do
@@ -30,7 +29,7 @@ RSpec.describe Spree::EasyPost::ReturnAuthorization, :vcr do
          label_resolution: 300,
          label_size: "4x6",
          label_type: "default",
-         label_url: "http://assets.geteasypost.com/postage_labels/labels/20151215/83e003f3992f4cf6af019839fab6152a.png",
+         label_url: "http://assets.geteasypost.com/postage_labels/labels/20151217/13fd83ef5cdb4a8f8e77e02bf086c8d5.png",
          label_file_type: "image/png"
       )
     end
