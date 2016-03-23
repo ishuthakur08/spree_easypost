@@ -1,0 +1,68 @@
+// Shipments AJAX API-
+$(document).ready(function () {
+
+  function download_image(name, address) {
+    var link = document.createElement('a');
+    link.style = 'position: fixed; left -10000px;'; // making it invisible
+    link.href = address; // forcing content type
+    link.download = name.indexOf('.png') < 0 ? name + '.png' : name;
+    /* file extension is very important! */
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  // handle ship click
+  $('[data-hook=admin_shipment_form] a.easy_ship').on('click', function () {
+    var link = $(this);
+    var shipment_number = link.data('shipment-number');
+    var url = Spree.url(Spree.routes.shipments_api + '/' + shipment_number + '/ship.json');
+    $.ajax({
+      type: 'PUT',
+      url: url,
+      data: {
+        token: Spree.api_key
+      }
+    }).done(function (res) {
+      window.location.reload();
+    }).error(function (msg) {
+      console.log(msg);
+      window.location.reload();
+    });
+  });
+
+  $('[data-hook=admin_shipment_form] a.postage_label').on('click', function () {
+    var link = $(this);
+    var shipment_number = link.data('shipment-number');
+    var url = Spree.url(Spree.routes.shipments_api + '/' + shipment_number + '/easy_label.json');
+    $.ajax({
+      type: 'GET',
+      url: url,
+      data: {
+        token: Spree.api_key
+      }
+    }).done(function (res) {
+      download_image('Easy Label', res.url);
+    }).error(function (msg) {
+      window.location.reload();
+    });
+  });
+
+  $('[data-hook=admin_shipment_form] a.postage_barcode').on('click', function () {
+    var link = $(this);
+    var shipment_number = link.data('shipment-number');
+    var url = Spree.url(Spree.routes.shipments_api + '/' + shipment_number + '/easy_barcode.json');
+    $.ajax({
+      type: 'GET',
+      url: url,
+      data: {
+        token: Spree.api_key
+      }
+    }).done(function (res) {
+       download_image('Easy barcode', res.url);
+    }).error(function (msg) {
+      window.location.reload();
+    });
+  });
+
+});

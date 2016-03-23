@@ -35,12 +35,18 @@ module Spree
     end
 
     def buy_easypost_rate
-      rate = easypost_shipment.rates.find do |rate|
-        rate.id == selected_easy_post_rate_id
+      unless selected_easy_post_shipment_id.present?
+        easypost_shipment
+        rate = @ep_shipment.lowest_rate
+        debugger
+        @ep_shipment.buy(rate: rate)
+        self.tracking= @ep_shipment.tracking_code
+        selected_shipping_rate.update_attributes(
+          :easy_post_shipment_id => @ep_shipment.id,
+          :easy_post_rate_id => rate.id
+        )
+        self.save!
       end
-
-      easypost_shipment.buy(rate)
-      self.tracking = easypost_shipment.tracking_code
     end
   end
 end

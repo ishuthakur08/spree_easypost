@@ -3,7 +3,7 @@ module Spree
     module PackageDecorator
       def easypost_parcel
         total_weight = contents.sum do |item|
-          item.quantity * item.variant.weight
+          item.quantity * (item.variant.try(:weight) || 0.1)
         end
 
         ::EasyPost::Parcel.create weight: total_weight
