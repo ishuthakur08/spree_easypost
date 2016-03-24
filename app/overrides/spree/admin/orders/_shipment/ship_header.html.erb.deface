@@ -1,13 +1,11 @@
 <!-- replace "[data-hook='stock-location']" -->
 <div class="panel-heading stock-location no-borderb" data-hook="stock-location">	
-	<% @ep_shipment = @order.shipments.first.try(:easypost_shipment)%>
     <h1 class="panel-title">
       <span class="shipment-number"><%= shipment.number %></span>
       -
       <span class="shipment-state"><%= Spree.t("shipment_states.#{shipment.state}") %></span>
       <%= Spree.t(:package_from) %>
       <strong class="stock-location-name" data-hook="stock-location-name">'<%= shipment.stock_location.name %>'</strong>
-      <%#debugger%>
       <%if shipment.shipped?%>
       	<%= link_to Spree.t(:postage_label), 'javascript:;', class: 'postage_label pull-right btn btn-primary',style: "margin-right: 10px", data: { 'shipment-number' => shipment.number } %>
         <%= link_to Spree.t(:barcode), 'javascript:;', class: 'postage_barcode pull-right btn btn-primary',style: "margin-right: 10px", data: { 'shipment-number' => shipment.number } %>
