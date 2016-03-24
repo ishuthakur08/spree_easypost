@@ -38,7 +38,6 @@ module Spree
       unless selected_easy_post_shipment_id.present?
         easypost_shipment
         rate = @ep_shipment.lowest_rate
-        debugger
         @ep_shipment.buy(rate: rate)
         self.tracking= @ep_shipment.tracking_code
         selected_shipping_rate.update_attributes(
